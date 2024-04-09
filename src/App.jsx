@@ -16,6 +16,11 @@ function App() {
   return (
     <>
       <div className="wrapper">
+        <label htmlFor="darkMode" className="dark-mode-toggler">
+          <i className="fa-solid fa-circle-half-stroke"></i>
+        </label>
+
+        <input type="checkbox" id="darkMode" />
         {/* nav bar */}
         <NavBar />
 
