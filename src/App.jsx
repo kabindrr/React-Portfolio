@@ -11,6 +11,7 @@ import { MyRecentWork } from "./Component/MyRecentWork.jsx";
 import { AboutMe } from "./Component/AboutMe.jsx";
 import { Contact } from "./Component/Contact.jsx";
 import { Footer } from "./Component/Footer.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
