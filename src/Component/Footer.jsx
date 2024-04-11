@@ -2,9 +2,9 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer class="flex footer">
-      <div class="flex top">
-        <div class="links">
+    <footer className="flex footer">
+      <div className="flex top">
+        <div className="links">
           <h3>Links</h3>
           <ul>
             <li>
@@ -21,7 +21,7 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="socials">
+        <div className="socials">
           <h3>Social Links</h3>
           <ul>
             <li>
@@ -48,7 +48,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div class="bottom">© All right reserved. Made by me with 🚀</div>
+      <div className="bottom">© All right reserved. Made by me with 🚀</div>
     </footer>
   );
 };

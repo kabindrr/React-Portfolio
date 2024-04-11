@@ -1,8 +1,5 @@
 import "./App.css";
 
-import image1 from "./assets/images.jpg";
-import image2 from "./assets/speakingDummy.jpg";
-import image3 from "./assets/profilePhoto.png";
 import { NavBar } from "./Component/NavBar.jsx";
 import { HeroSection } from "./Component/HeroSection.jsx";
 import { Banner } from "./Component/Banner.jsx";
@@ -11,7 +8,8 @@ import { MyRecentWork } from "./Component/MyRecentWork.jsx";
 import { AboutMe } from "./Component/AboutMe.jsx";
 import { Contact } from "./Component/Contact.jsx";
 import { Footer } from "./Component/Footer.jsx";
-import { BrowserRouter } from "react-router-dom";
+
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -22,28 +20,17 @@ function App() {
         </label>
 
         <input type="checkbox" id="darkMode" />
-        {/* nav bar */}
+
         <NavBar />
 
-        {/* hero Section */}
-        <HeroSection />
+        <Routes>
+          <Route path="/" element={<HeroSection />}></Route>
+          <Route path="/skills" element={<Skill />}></Route>
+          <Route path="/projects" element={<MyRecentWork />}></Route>
+          <Route path="/about" element={<AboutMe />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
 
-        {/* Banner */}
-        <Banner />
-
-        {/* skills */}
-        <Skill />
-
-        {/* my recent work */}
-        <MyRecentWork />
-
-        {/* about me */}
-        <AboutMe />
-
-        {/* contact */}
-        <Contact />
-
-        {/* footer */}
         <Footer />
       </div>
     </>
